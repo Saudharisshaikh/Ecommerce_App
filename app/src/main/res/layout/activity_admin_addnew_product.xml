@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAddnewProduct">
+    
+    
+
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:src="@drawable/select_product_image"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:id="@+id/selectImage"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productname"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/selectImage"
+        android:inputType="textImeMultiLine"
+        android:padding="20dp"
+        android:background="@drawable/inputs"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:hint="Product Name ..."
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productdiscription"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/productname"
+        android:inputType="textImeMultiLine"
+        android:padding="20dp"
+        android:background="@drawable/inputs"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:hint="Product Name ..."
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/productprice"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/productdiscription"
+        android:inputType="textImeMultiLine"
+        android:padding="20dp"
+        android:background="@drawable/inputs"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:hint="Product Price ..."
+        />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@+id/productprice"
+        android:text="Add New Product"
+        android:background="@drawable/buttons"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="17dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:id="@+id/addnewProduct"
+
+        />
+
+</RelativeLayout>
